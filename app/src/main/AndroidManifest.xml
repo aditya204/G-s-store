@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gaurishankarprashad.gsstore">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/cart_icon_app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/cart_icon_app_logo"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/withoutActionBar">
+        <activity android:name="com.gaurishankarprashad.gsstore.alpha"></activity>
+        <activity android:name="com.gaurishankarprashad.gsstore.ForgotPassword" />
+        <activity android:name="com.gaurishankarprashad.gsstore.VerifyPhone" />
+        <activity android:name="com.gaurishankarprashad.gsstore.AllReview" />
+        <activity android:name="com.gaurishankarprashad.gsstore.AllDescription" />
+        <activity android:name="com.gaurishankarprashad.gsstore.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.gaurishankarprashad.gsstore.SearchedProduct" />
+        <activity android:name="com.gaurishankarprashad.gsstore.Search" />
+        <activity android:name="com.gaurishankarprashad.gsstore.MyAddress" />
+        <activity android:name="com.gaurishankarprashad.gsstore.address" />
+        <activity android:name="com.gaurishankarprashad.gsstore.BuyNow" />
+        <activity android:name="com.gaurishankarprashad.gsstore.AddProduct" />
+        <activity android:name="com.gaurishankarprashad.gsstore.AdminOrderProduct" />
+        <activity android:name="com.gaurishankarprashad.gsstore.AdminConfirmOrder" />
+        <activity android:name="com.gaurishankarprashad.gsstore.PendingOrders" />
+        <activity android:name="com.gaurishankarprashad.gsstore.OutOfStock" />
+        <activity android:name="com.gaurishankarprashad.gsstore.MyOrderGrocery" />
+        <activity android:name="com.gaurishankarprashad.gsstore.Product" />
+        <activity
+            android:name="com.gaurishankarprashad.gsstore.Home"
+            android:theme="@style/NoActionBar" />
+        <activity android:name="com.gaurishankarprashad.gsstore.Registration" />
+        <activity android:name="com.gaurishankarprashad.gsstore.GroceryProductDetails" />
+        <activity android:name="com.gaurishankarprashad.gsstore.GroceryCart" />
+        <activity android:name="com.gaurishankarprashad.gsstore.Edit_pofile" />
+        <activity android:name="com.gaurishankarprashad.gsstore.ProfileActivity" />
+        <activity android:name="com.gaurishankarprashad.gsstore.GroceryOrderDetails" />
+        <activity android:name="com.gaurishankarprashad.gsstore.WriteReview" />
+        <activity android:name="com.gaurishankarprashad.gsstore.Grocery_wish_list" />
+        <activity
+            android:name="com.gaurishankarprashad.gsstore.MainActivity"
+            android:theme="@style/NoActionBar" />
+    </application>
+
+</manifest>

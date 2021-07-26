@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".AddProduct">
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:text="name :-"
+                    />
+                <EditText
+                    android:theme="@style/Edit_Text"
+                    android:id="@+id/add_product_name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border_black_stroke"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:paddingStart="8dp"
+
+                    android:textColor="#000"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:text="price :-"
+                    />
+
+                <EditText
+                    android:theme="@style/Edit_Text"
+
+                    android:id="@+id/add_product_price_et"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border_black_stroke"
+                    android:ems="10"
+                    android:hint="Price"
+                    android:inputType="number"
+                    android:paddingStart="8dp"
+
+                    android:textColor="#000"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:text="cut Price:-"
+                    />
+                <EditText
+                    android:theme="@style/Edit_Text"
+
+                    android:id="@+id/add_product_cutPrice_et"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border_black_stroke"
+                    android:ems="10"
+                    android:hint="Cut Price"
+                    android:inputType="number"
+                    android:paddingStart="8dp"
+
+                    android:textColor="#000"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:text="offer :-"
+                    />
+
+                <EditText
+                    android:theme="@style/Edit_Text"
+
+                    android:id="@+id/add_product_offer_et"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border_black_stroke"
+                    android:ems="10"
+                    android:hint="Offer"
+                    android:inputType="text"
+                    android:paddingStart="8dp"
+
+                    android:textColor="#000"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:text="Previous Stock :-"
+                    />
+
+                <TextView
+                    android:id="@+id/add_product_previous_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:text=" 0"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:text="Add Stock :-"
+                    />
+                <EditText
+                    android:theme="@style/Edit_Text"
+                    android:id="@+id/add_product_stock_et"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border_black_stroke"
+                    android:ems="10"
+                    android:hint="Add stock"
+                    android:inputType="number"
+                    android:paddingStart="8dp"
+
+                    android:textColor="#000"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:text="relevant_tag:-"
+                    />
+                <EditText
+                    android:theme="@style/Edit_Text"
+                    android:id="@+id/add_product_relevant_tag_et"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border_black_stroke"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:hint="relevant_tag"
+                    android:paddingStart="8dp"
+
+                    android:textColor="#000"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:text="home desc:-"
+                    />
+                <EditText
+                    android:theme="@style/Edit_Text"
+                    android:id="@+id/add_product_home_desc_et"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border_black_stroke"
+                    android:ems="10"
+                    android:inputType="text"
+
+                    android:hint="home desc"
+                    android:paddingStart="8dp"
+
+                    android:textColor="#000"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/add_product_btn"
+                android:layout_width="121dp"
+                android:layout_marginTop="12dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/border_black_stroke"
+                android:paddingHorizontal="5dp"
+                android:text="ADD Product" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:text="Desc:-"
+                    />
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:id="@+id/add_product_description_et"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/border_black_stroke"
+                    android:ems="10"
+                    android:hint="Add Desceiption"
+                    android:inputType="textPersonName"
+                    android:paddingStart="8dp"
+                    android:textColor="#000"
+                    android:layout_weight="1"
+
+                    android:theme="@style/Edit_Text"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:id="@+id/add_product_description_content_et"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/border_black_stroke"
+                    android:ems="10"
+                    android:hint="Add content"
+                    android:inputType="textPersonName"
+                    android:paddingStart="8dp"
+                    android:textColor="#000"
+
+                    android:theme="@style/Edit_Text"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_description_btn"
+                android:layout_width="121dp"
+                android:layout_marginTop="12dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/border_black_stroke"
+                android:paddingHorizontal="5dp"
+                android:text="ADD description" />
+
+            <Button
+                android:id="@+id/chooseFile_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="choose File" />
+
+            <ImageView
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageView3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_marginTop="12dp"
+                android:progressTint="#DF4444"
+                android:progress="0"
+                android:progressBackgroundTint="#DF4444"
+                android:paddingHorizontal="20dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/UploadFile"
+android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Image" />
+            <Button
+                android:id="@+id/ShowUpload"
+                android:layout_weight="1"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Image" />
+        </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/addProductImageRecycler"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:id="@+id/addProductDescriptionRecycler"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/product_details_CL"
+    android:visibility="visible"
+    android:layout_height="match_parent"
+    tools:context=".GroceryProductDetails">
+
+
+    <ScrollView
+
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:nestedScrollingEnabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/myCartPaymentLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/grocery_product_images" />
+
+            <include layout="@layout/grocery_product_details_description" />
+
+            <include layout="@layout/activity_review" />
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:background="#FFF"
+                android:elevation="1dp"
+                android:layout_height="36dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Relevant Product"
+                    android:paddingVertical="4dp"
+                    android:textSize="16dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#000"
+                    />
+            </LinearLayout>
+
+
+            <include layout="@layout/recycler_view"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/myCartPaymentLayout"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:elevation="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/addtoGroceryCary"
+            android:gravity="center"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:layout_weight="1"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="ADD TO CART"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#252525"
+
+                android:gravity="center_vertical"
+                android:drawableTint="#252525"
+                android:drawableEnd="@drawable/ic_shopping_cart_black_24dp"
+                android:drawablePadding="8dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gotoGroceryCary"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+
+            android:background="#fff"
+
+            android:layout_weight="1"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="REMOVE FROM CART"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#252525"
+                android:gravity="center_vertical"
+                android:drawableEnd="@drawable/ic_delete_black_24dp"
+
+                android:drawableTint="#252525"
+                android:drawablePadding="8dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buy_now_groceryBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Buy Now"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#DF4444"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/product_details_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/myCartPaymentLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/scrollView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

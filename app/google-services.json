@@ -1,0 +1,117 @@
+{
+  "project_info": {
+    "project_number": "245625265422",
+    "firebase_url": "https://gsstore.firebaseio.com",
+    "project_id": "gsstore",
+    "storage_bucket": "gsstore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245625265422:android:68997ba1d286594c9a8b5f",
+        "android_client_info": {
+          "package_name": "com.example.gsstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245625265422-pjtamu3papasdui8al3t0asjerm40gr4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gsstore",
+            "certificate_hash": "a12d129fc8092988689efafa1c21cd15d1c2fae0"
+          }
+        },
+        {
+          "client_id": "245625265422-vfmjaetbbtagjabk827ksjcnuih9ff4p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gsstore",
+            "certificate_hash": "7c66ee7e002cf845c3222463e5f2fd0f0ef7f535"
+          }
+        },
+        {
+          "client_id": "245625265422-a6gg7o4e93e7jdfr5mqs0fknu3kll5l0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gsstore",
+            "certificate_hash": "1411e9d61e62388176eee4725f863046732bbb42"
+          }
+        },
+        {
+          "client_id": "245625265422-nsitgcamhdgr0mpt8gl5mvi7q3ilmqv0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gsstore",
+            "certificate_hash": "5bf1a525f081f48071b4caaae8ffe95ccd6c0c1d"
+          }
+        },
+        {
+          "client_id": "245625265422-ttqa5oif2sp6daokrcekdpl388t943ap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhGvLloLVRvLyXhd7RumiCMV6MRXb1ErQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245625265422-ttqa5oif2sp6daokrcekdpl388t943ap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245625265422:android:2acd412162b88b8b9a8b5f",
+        "android_client_info": {
+          "package_name": "com.gaurishankarprashad.gsstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245625265422-57htbla06mrcah47qop78jif91s9vfdu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gaurishankarprashad.gsstore",
+            "certificate_hash": "5bf1a525f081f48071b4caaae8ffe95ccd6c0c1d"
+          }
+        },
+        {
+          "client_id": "245625265422-afqaha1ij5dqkhisntvi4s0g7ql8ud1j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gaurishankarprashad.gsstore",
+            "certificate_hash": "a12d129fc8092988689efafa1c21cd15d1c2fae0"
+          }
+        },
+        {
+          "client_id": "245625265422-ttqa5oif2sp6daokrcekdpl388t943ap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhGvLloLVRvLyXhd7RumiCMV6MRXb1ErQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245625265422-ttqa5oif2sp6daokrcekdpl388t943ap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
